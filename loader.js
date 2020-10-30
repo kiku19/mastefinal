@@ -459,17 +459,17 @@ for (var g =0 ; g<projectimage.length ; g++)
 
 //carousel
 var i =1;
-var imgurl = ["./india50000.png","./india50001.png","./india50002.png"] ;
+var imgurl = ["./india50000.png","./india50001.png","./india50002.png","./india50003.png"] ;
 imagec3.src = imgurl[0];
-var para1 = ["Winner of INDIA 5000 Best MSME Awards for quality excellence with privilege this has been awarded to MASTEK ENGINEERING Pvt.ltd in 2018 for outstanding contribution in quality and excellence.","MASTEK ENGINEERING has been audited and confirmed to ISO 9001:2015 for the following activities Civil, Mechanical and Electrical Construction works for industries including Oil and Gas fields. This can verified by using Certificate number 733014.","National Small industries Corporation limited has certified MASTEK ENGINEERING to foster the growth of MSME businesses, which provides single point registration thus able to claim 25% minimum annual purchase made by central ministries."]
-var award1= ["INDIA 5000","ISO Certified","NSIC Certified"]
+var para1 = ["Winner of INDIA 5000 Best MSME Awards for quality excellence with privilege this has been awarded to MASTEK ENGINEERING Pvt.ltd in 2018 for outstanding contribution in quality and excellence.","MASTEK ENGINEERING has been audited and confirmed to ISO 9001:2015 for the following activities Civil, Mechanical and Electrical Construction works for industries including Oil and Gas fields. This can verified by using Certificate number 733014.","National Small industries Corporation limited has certified MASTEK ENGINEERING to foster the growth of MSME businesses, which provides single point registration thus able to claim 25% minimum annual purchase made by central ministries.","Mastek has been certified by Micro, Small and Medium Enterprises or Udyog Aadhaar in the year 2016"]
+var award1= ["INDIA 5000","ISO Certified","NSIC Certified","MSME"]
 award[0].innerHTML = award1[0];
 para[0].innerHTML = para1[0]
 para[0].style.display = "block"
 award[0].style.display = "block"
 
 loop = async() =>{
-  for(;i<3;i++)
+  for(;i<4;i++)
   {
   await new Promise(resolve => setTimeout(resolve,8000))
   // para[0].innerHTML = para1[i];
@@ -505,8 +505,8 @@ loop = async() =>{
     opacity : [1,0],
     duration :500,
     easing : "linear"
-  },"+=1800")
-  if(i==2){i=-1}
+  },"+=3000")
+  if(i==3){i=-1}
    }
   removeimage(imagec3);
 }
@@ -541,6 +541,8 @@ function add2(k)
   imagec3.setAttribute("id","imagec3");
   if (localimg[k] == undefined) 
   {
+    console.log("UGGUG")
+    console.log(k)
     imagec3.src = imgurl[k];
     imagec3.addEventListener("load",function(){  
     canvascontext.clearRect(0,0,canvas.width,canvas.height);
