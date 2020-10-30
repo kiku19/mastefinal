@@ -439,13 +439,112 @@ totalprojects.addEventListener("click",()=>{
 //insert image on active projects
 
 console.log(projectimage)
-var imageurl
-for (var g =0 ; g<projectimage.length ; g++)
-{
-  imageurl = "url('./background" + g + ".jpg')"
-  console.log(imageurl)
-  projectimage[g].style.backgroundImage = imageurl
-}
+
+  loop2 = async() =>{
+    for(var p =0 ; p <1 ; p++)
+    {
+      var imageurl
+      imageurl = "url('./background" + "0" + p + ".jpg')"
+      // await new Promise(resolve => setTimeout(resolve,4000))
+      console.log(imageurl)
+      projectimage[0].style.backgroundImage = imageurl
+      // if(p==1){p=-1}
+    }
+  }
+  loop2();
+
+    loop3 = async() =>{
+    for(var p =0 ; p <2 ; p++)
+    {
+      var imageurl
+      imageurl = "url('./background" + "1" + p + ".jpg')"
+      await new Promise(resolve => setTimeout(resolve,4000))
+      console.log(imageurl)
+      projectimage[1].style.backgroundImage = imageurl
+      if(p==1){p=-1}
+    }
+  }
+  loop3();
+
+    loop4 = async() =>{
+    for(var p =0 ; p <4 ; p++)
+    {
+      var imageurl
+      imageurl = "url('./background" + "2" + p + ".jpg')"
+      await new Promise(resolve => setTimeout(resolve,4000))
+      console.log(imageurl)
+      projectimage[2].style.backgroundImage = imageurl
+      if(p==3){p=-1}
+    }
+  }
+  loop4();
+
+    loop5 = async() =>{
+    for(var p =0 ; p <4 ; p++)
+    {
+      var imageurl
+      imageurl = "url('./background" + "3" + p + ".jpg')"
+      await new Promise(resolve => setTimeout(resolve,4000))
+      console.log(imageurl)
+      projectimage[3].style.backgroundImage = imageurl
+      if(p==3){p=-1}
+    }
+  }
+  loop5();
+
+    loop6 = async() =>{
+    for(var p =0 ; p <1 ; p++)
+    {
+      var imageurl
+      imageurl = "url('./background" + "4" + p + ".jpg')"
+      await new Promise(resolve => setTimeout(resolve,4000))
+      console.log(imageurl)
+      projectimage[4].style.backgroundImage = imageurl
+      if(p==0){p=-1}
+    }
+  }
+  loop6();
+
+    loop7 = async() =>{
+    for(var p =0 ; p <4 ; p++)
+    {
+      var imageurl
+      imageurl = "url('./background" + "5" + p + ".jpg')"
+      await new Promise(resolve => setTimeout(resolve,4000))
+      console.log(imageurl)
+      projectimage[5].style.backgroundImage = imageurl
+      if(p==3){p=-1}
+    }
+  }
+  loop7();
+
+    loop8 = async() =>{
+    for(var p =0 ; p <1 ; p++)
+    {
+      var imageurl
+      imageurl = "url('./background" + "6" + p + ".jpg')"
+      await new Promise(resolve => setTimeout(resolve,4000))
+      console.log(imageurl)
+      projectimage[6].style.backgroundImage = imageurl
+      if(p==0){p=-1}
+    }
+  }
+  loop8();
+
+    loop9 = async() =>{
+    for(var p =0 ; p <3 ; p++)
+    {
+      var imageurl
+      imageurl = "url('./background" + "7" + p + ".jpg')"
+      await new Promise(resolve => setTimeout(resolve,4000))
+      console.log(imageurl)
+      projectimage[7].style.backgroundImage = imageurl
+      if(p==2){p=-1}
+    }
+  }
+  loop9();
+
+
 
 
 // for(var h = 0 ; h<4 ; h++)
